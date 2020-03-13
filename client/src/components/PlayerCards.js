@@ -13,7 +13,7 @@ const PlayerCard = props => {
     console.log('props', props)
 
     return (
-        <Card>
+        <Card data-testid='playerCard'>
             {props.players.map((player, index) => {
                 console.log('player', player)
                 return (
