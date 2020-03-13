@@ -1,7 +1,8 @@
 import React from 'react';
 import axios from 'axios';
 import PlayerCard from './components/PlayerCards'
-import './App.css';
+import Navbar from './components/Navbar';
+import './styles.scss';
 
 class App extends React.Component {
   constructor(){
@@ -23,6 +24,8 @@ class App extends React.Component {
   render() {
     return(
       <div>
+        <Navbar />
+        <h1>Most Searched Players 2019</h1>
         <PlayerCard players={this.state.players} />
       </div>
     )
@@ -31,3 +34,4 @@ class App extends React.Component {
 }
 
 export default App;
+

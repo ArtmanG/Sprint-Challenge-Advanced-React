@@ -1,10 +1,19 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Card = styled.div`
+margin: 1%;
+    div {
+        margin: 1% auto;
+    }
+
+`;
 
 const PlayerCard = props => {
     console.log('props', props)
 
     return (
-        <div>
+        <Card>
             {props.players.map((player, index) => {
                 console.log('player', player)
                 return (
@@ -15,7 +24,7 @@ const PlayerCard = props => {
                     </div>
                 )
             })}
-        </div>
+        </Card>
     )
 }
 
